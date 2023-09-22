@@ -144,6 +144,7 @@ jobs:
         id: runtest
         run: |
           cd /home/runner/work/axon/axon/v3-core
+          yarn run addRpcLog
           yarn test:prepare
           yarn test:runAll0
       - name: Run test 1
